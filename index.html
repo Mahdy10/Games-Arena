@@ -18,9 +18,10 @@
     <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
     <link rel="stylesheet" href="./CSS/Style.css" />
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#main-navigation .nav-links">
     <header class="site-header">
       <nav
+        id="main-navigation"
         class="navbar-wrap container d-flex align-items-center"
         aria-label="Main navigation"
       >
@@ -29,11 +30,11 @@
           <span>GameArena</span>
         </a>
         <div class="nav-links">
-          <a class="active" href="#hero">Home</a>
-          <a href="#latest-games">Our Games</a>
-          <a href="#what-we-do">What We Do</a>
-          <a href="#team-members">Our Team</a>
-          <a href="#contact">Contact Us</a>
+          <a class="nav-link active" href="#hero">Home</a>
+          <a class="nav-link" href="#latest-games">Our Games</a>
+          <a class="nav-link" href="#what-we-do">What We Do</a>
+          <a class="nav-link" href="#team-members">Our Team</a>
+          <a class="nav-link" href="#contact">Contact Us</a>
         </div>
         <div class="nav-actions">
           <a class="nav-icon" href="#contact" aria-label="Notifications">

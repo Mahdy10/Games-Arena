@@ -95,6 +95,7 @@ img {
 .nav-links a {
   color: #e6e8ed;
   font-size: 16px;
+  padding: 0;
   text-transform: capitalize;
   transition: color 0.2s ease;
 }
@@ -223,6 +224,7 @@ img {
   background:
     linear-gradient(rgba(5, 6, 8, 0.81), rgba(5, 6, 8, 0.86)),
     url("./../Images/hero-bg.jpg") center 48% / cover no-repeat;
+  background-attachment: fixed;
 }
 
 .hero-content {
@@ -1280,6 +1282,10 @@ img {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .hero {
+    background-attachment: scroll;
   }
 
   *,
